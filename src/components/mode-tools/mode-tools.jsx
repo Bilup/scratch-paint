@@ -233,8 +233,349 @@ const ModeToolsComponent = props => {
             defaultMessage: 'Center Align',
             description: 'Label for the button that sets text alignment to the center',
             id: 'pm.paint.modeTools.centerAlign'
+        },
+        arrowTipResize: {
+            defaultMessage: 'Hold Alt + Shift to resize arrow tip',
+            description: 'Instruction for resizing arrow tip',
+            id: 'paint.modeTools.arrowTipResize'
+        },
+        more: {
+            defaultMessage: 'More',
+            description: 'Label for dropdown to access more action buttons',
+            id: 'paint.paintEditor.more'
+        },
+        // Categories for sussy tool
+        categoryShapes: {
+            defaultMessage: 'Shapes',
+            description: 'Category for basic shapes',
+            id: 'paint.sussyTool.category.shapes'
+        },
+        categorySymbols: {
+            defaultMessage: 'Symbols',
+            description: 'Category for symbols',
+            id: 'paint.sussyTool.category.symbols'
+        },
+        categoryObjects: {
+            defaultMessage: 'Objects',
+            description: 'Category for objects',
+            id: 'paint.sussyTool.category.objects'
+        },
+        categorySpeech: {
+            defaultMessage: 'Speech',
+            description: 'Category for speech bubbles',
+            id: 'paint.sussyTool.category.speech'
+        },
+        categoryBlocks: {
+            defaultMessage: 'Blocks',
+            description: 'Category for blocks',
+            id: 'paint.sussyTool.category.blocks'
+        },
+        categoryCustom: {
+            defaultMessage: 'Custom',
+            description: 'Category for custom shapes',
+            id: 'paint.sussyTool.category.custom'
+        },
+        // Common shape names
+        shapeTriangleRightAngle: {
+            defaultMessage: 'Right Triangle',
+            description: 'Name for right triangle shape',
+            id: 'paint.sussyTool.shape.triangleRightAngle'
+        },
+        shapeChevronArrow: {
+            defaultMessage: 'Chevron Arrow',
+            description: 'Name for chevron arrow shape',
+            id: 'paint.sussyTool.shape.chevronArrow'
+        },
+        shapeHeart: {
+            defaultMessage: 'Heart',
+            description: 'Name for heart shape',
+            id: 'paint.sussyTool.shape.heart'
+        },
+        shapeSmile: {
+            defaultMessage: 'Smile',
+            description: 'Name for smile shape',
+            id: 'paint.sussyTool.shape.smile'
+        },
+        shapeSun: {
+            defaultMessage: 'Sun',
+            description: 'Name for sun shape',
+            id: 'paint.sussyTool.shape.sun'
+        },
+        shapeCloud: {
+            defaultMessage: 'Cloud',
+            description: 'Name for cloud shape',
+            id: 'paint.sussyTool.shape.cloud'
+        },
+        shapeLightningBolt: {
+            defaultMessage: 'Lightning Bolt',
+            description: 'Name for lightning bolt shape',
+            id: 'paint.sussyTool.shape.lightningBolt'
+        },
+        // Shapes category
+        shapePentagonArrow: {
+            defaultMessage: 'Pentagon Arrow',
+            description: 'Name for pentagon arrow shape',
+            id: 'paint.sussyTool.shape.pentagonArrow'
+        },
+        shapeTrapezoid: {
+            defaultMessage: 'Trapezoid',
+            description: 'Name for trapezoid shape',
+            id: 'paint.sussyTool.shape.trapezoid'
+        },
+        shapeParallelogram: {
+            defaultMessage: 'Parallelogram',
+            description: 'Name for parallelogram shape',
+            id: 'paint.sussyTool.shape.parallelogram'
+        },
+        shapeKite: {
+            defaultMessage: 'Kite',
+            description: 'Name for kite shape',
+            id: 'paint.sussyTool.shape.kite'
+        },
+        // Symbols category
+        shapeCheck: {
+            defaultMessage: 'Checkmark',
+            description: 'Name for checkmark shape',
+            id: 'paint.sussyTool.shape.check'
+        },
+        shapeCross: {
+            defaultMessage: 'Multiply',
+            description: 'Name for multiply shape',
+            id: 'paint.sussyTool.shape.cross'
+        },
+        shapePin: {
+            defaultMessage: 'Pin',
+            description: 'Name for pin shape',
+            id: 'paint.sussyTool.shape.pin'
+        },
+        shapeFrown: {
+            defaultMessage: 'Frown',
+            description: 'Name for frown shape',
+            id: 'paint.sussyTool.shape.frown'
+        },
+        shapePerson: {
+            defaultMessage: 'Person',
+            description: 'Name for person shape',
+            id: 'paint.sussyTool.shape.person'
+        },
+        shapeStar: {
+            defaultMessage: 'Star',
+            description: 'Name for star shape',
+            id: 'paint.sussyTool.shape.star'
+        },
+        shapeMoon: {
+            defaultMessage: 'Moon',
+            description: 'Name for moon shape',
+            id: 'paint.sussyTool.shape.moon'
+        },
+        shapeCrescentMoon: {
+            defaultMessage: 'Crescent Moon',
+            description: 'Name for crescent moon shape',
+            id: 'paint.sussyTool.shape.crescentMoon'
+        },
+        shapeMusicNote: {
+            defaultMessage: 'Slanted Beamed Note',
+            description: 'Name for slanted beamed note shape',
+            id: 'paint.sussyTool.shape.musicNote'
+        },
+        shapeMusicNote2: {
+            defaultMessage: 'Eighth Note',
+            description: 'Name for eighth note shape',
+            id: 'paint.sussyTool.shape.musicNote2'
+        },
+        shapeMusicNote3: {
+            defaultMessage: 'Treble Clef',
+            description: 'Name for treble clef shape',
+            id: 'paint.sussyTool.shape.musicNote3'
+        },
+        shapeSussy: {
+            defaultMessage: 'Sussy',
+            description: 'Name for sussy shape',
+            id: 'paint.sussyTool.shape.sussy'
+        },
+        shapeFineman: {
+            defaultMessage: 'Fine Man',
+            description: 'Name for fine man shape',
+            id: 'paint.sussyTool.shape.fineman'
+        },
+        // Objects category
+        shapeGear: {
+            defaultMessage: 'Gear',
+            description: 'Name for gear shape',
+            id: 'paint.sussyTool.shape.gear'
+        },
+        shapeLightningBolt2: {
+            defaultMessage: 'Bolt',
+            description: 'Name for bolt shape',
+            id: 'paint.sussyTool.shape.lightningBolt2'
+        },
+        shapeCloud: {
+            defaultMessage: 'Cloud',
+            description: 'Name for cloud shape',
+            id: 'paint.sussyTool.shape.cloud'
+        },
+        shapeCloud2: {
+            defaultMessage: 'Cloud 2',
+            description: 'Name for cloud 2 shape',
+            id: 'paint.sussyTool.shape.cloud2'
+        },
+        shapePinPush: {
+            defaultMessage: 'Push Pin',
+            description: 'Name for push pin shape',
+            id: 'paint.sussyTool.shape.pinPush'
+        },
+        shapeBookmark: {
+            defaultMessage: 'Bookmark',
+            description: 'Name for bookmark shape',
+            id: 'paint.sussyTool.shape.bookmark'
+        },
+        shapeNote: {
+            defaultMessage: 'Note',
+            description: 'Name for note shape',
+            id: 'paint.sussyTool.shape.note'
+        },
+        shapePaper: {
+            defaultMessage: 'Paper',
+            description: 'Name for paper shape',
+            id: 'paint.sussyTool.shape.paper'
+        },
+        shapeEye: {
+            defaultMessage: 'Eye',
+            description: 'Name for eye shape',
+            id: 'paint.sussyTool.shape.eye'
+        },
+        shapeLock: {
+            defaultMessage: 'Lock',
+            description: 'Name for lock shape',
+            id: 'paint.sussyTool.shape.lock'
+        },
+        shapeLockOpened: {
+            defaultMessage: 'Open Lock',
+            description: 'Name for open lock shape',
+            id: 'paint.sussyTool.shape.lockOpened'
+        },
+        shapeInbox: {
+            defaultMessage: 'Inbox',
+            description: 'Name for inbox shape',
+            id: 'paint.sussyTool.shape.inbox'
+        },
+        // Speech category
+        shapeSpeechBubble: {
+            defaultMessage: 'Speech Bubble',
+            description: 'Name for speech bubble shape',
+            id: 'paint.sussyTool.shape.speechBubble'
+        },
+        shapeThinkingBubble: {
+            defaultMessage: 'Thinking Bubble',
+            description: 'Name for thinking bubble shape',
+            id: 'paint.sussyTool.shape.thinkingBubble'
+        },
+        shapeShoutBubble: {
+            defaultMessage: 'Shout Bubble',
+            description: 'Name for shout bubble shape',
+            id: 'paint.sussyTool.shape.shoutBubble'
+        },
+        shapeSquareBubble: {
+            defaultMessage: 'Square Bubble',
+            description: 'Name for square bubble shape',
+            id: 'paint.sussyTool.shape.squareBubble'
+        },
+        shapeCodeblock: {
+            defaultMessage: 'Code Block',
+            description: 'Name for code block shape',
+            id: 'paint.sussyTool.shape.codeblock'
+        },
+        shapeCodeblockHat: {
+            defaultMessage: 'Hat Block',
+            description: 'Name for hat block shape',
+            id: 'paint.sussyTool.shape.codeblockHat'
+        },
+        shapeCodeblockEndCap: {
+            defaultMessage: 'End Cap Block',
+            description: 'Name for end cap block shape',
+            id: 'paint.sussyTool.shape.codeblockEndCap'
+        },
+        shapeCodeblockReporter: {
+            defaultMessage: 'Reporter Block',
+            description: 'Name for reporter block shape',
+            id: 'paint.sussyTool.shape.codeblockReporter'
+        },
+        shapeCodeblockBoolean: {
+            defaultMessage: 'Boolean Block',
+            description: 'Name for boolean block shape',
+            id: 'paint.sussyTool.shape.codeblockBoolean'
         }
     });
+
+    // Helper function to get translated category name
+    const getCategoryName = (categoryId) => {
+        const categoryMessages = {
+            'shapes': messages.categoryShapes,
+            'symbols': messages.categorySymbols,
+            'objects': messages.categoryObjects,
+            'speech': messages.categorySpeech,
+            'blocks': messages.categoryBlocks,
+            'custom': messages.categoryCustom
+        };
+        if (categoryMessages[categoryId]) {
+            return props.intl.formatMessage(categoryMessages[categoryId]);
+        }
+        return sussyToolCategories[categoryId];
+    };
+
+    // Helper function to get translated shape name
+    const getShapeName = (shapeId) => {
+        const shapeMessages = {
+            'triangleRightAngle': messages.shapeTriangleRightAngle,
+            'chevronArrow': messages.shapeChevronArrow,
+            'heart': messages.shapeHeart,
+            'smile': messages.shapeSmile,
+            'sun': messages.shapeSun,
+            'cloud': messages.shapeCloud,
+            'lightningBolt': messages.shapeLightningBolt,
+            'pentagonArrow': messages.shapePentagonArrow,
+            'trapezoid': messages.shapeTrapezoid,
+            'parallelogram': messages.shapeParallelogram,
+            'kite': messages.shapeKite,
+            'check': messages.shapeCheck,
+            'cross': messages.shapeCross,
+            'pin': messages.shapePin,
+            'frown': messages.shapeFrown,
+            'person': messages.shapePerson,
+            'star': messages.shapeStar,
+            'moon': messages.shapeMoon,
+            'crescentMoon': messages.shapeCrescentMoon,
+            'musicNote': messages.shapeMusicNote,
+            'musicNote2': messages.shapeMusicNote2,
+            'musicNote3': messages.shapeMusicNote3,
+            'sussy': messages.shapeSussy,
+            'fineman': messages.shapeFineman,
+            'gear': messages.shapeGear,
+            'lightningBolt2': messages.shapeLightningBolt2,
+            'cloud2': messages.shapeCloud2,
+            'pinPush': messages.shapePinPush,
+            'bookmark': messages.shapeBookmark,
+            'note': messages.shapeNote,
+            'paper': messages.shapePaper,
+            'eye': messages.shapeEye,
+            'lock': messages.shapeLock,
+            'lockOpened': messages.shapeLockOpened,
+            'inbox': messages.shapeInbox,
+            'speechBubble': messages.shapeSpeechBubble,
+            'thinkingBubble': messages.shapeThinkingBubble,
+            'shoutBubble': messages.shapeShoutBubble,
+            'squareBubble': messages.shapeSquareBubble,
+            'codeblock': messages.shapeCodeblock,
+            'codeblockHat': messages.shapeCodeblockHat,
+            'codeblockEndCap': messages.shapeCodeblockEndCap,
+            'codeblockReporter': messages.shapeCodeblockReporter,
+            'codeblockBoolean': messages.shapeCodeblockBoolean
+        };
+        if (shapeMessages[shapeId]) {
+            return props.intl.formatMessage(shapeMessages[shapeId]);
+        }
+        return null;
+    };
 
     switch (props.mode) {
     case Modes.BRUSH:
@@ -451,7 +792,7 @@ const ModeToolsComponent = props => {
                 {Object.keys(categorizedShapes).map(categoryId => categorizedShapes[categoryId].length === 0 ?
                     (<React.Fragment key={categoryId} />) : (<React.Fragment key={categoryId}>
                         <p className={classNames(styles.dropItemShapeToolLabel)}>
-                            {sussyToolCategories[categoryId]}
+                            {getCategoryName(categoryId)}
                         </p>
                         {categorizedShapes[categoryId].map(shape => (
                             <LabeledIconButton
@@ -459,7 +800,7 @@ const ModeToolsComponent = props => {
                                 className={classNames(styles.dropItemShapeTool)}
                                 hideLabel={hideLabel(props.intl.locale)}
                                 imgSrc={`data:image/svg+xml,${encodeURIComponent(generateSussyShapeSVG(shape))}`}
-                                title={shape.name}
+                                title={getShapeName(shape.id) || shape.name}
                                 onClick={() => changeFunction(shape.id)}
                             />
                         ))}
@@ -604,7 +945,7 @@ const ModeToolsComponent = props => {
                             }
                             tipSize={.01}
                         >
-                            More
+                            {props.intl.formatMessage(messages.more)}
                         </Dropdown>
                     </InputGroup>
                 </MediaQuery>
@@ -644,13 +985,13 @@ const ModeToolsComponent = props => {
         const flipOptions = (
             <InputGroup className={classNames(styles.modDashedBorder, styles.modLabeledIconHeight)}>
                 <LabeledIconButton
-                    hideLabel={props.intl.locale !== 'en'}
+                    hideLabel={hideLabel(props.intl.locale)}
                     icon={FlipHorizontal2}
                     title={props.intl.formatMessage(messages.flipHorizontal)}
                     onClick={props.onFlipHorizontal}
                 />
                 <LabeledIconButton
-                    hideLabel={props.intl.locale !== 'en'}
+                    hideLabel={hideLabel(props.intl.locale)}
                     icon={FlipVertical2}
                     title={props.intl.formatMessage(messages.flipVertical)}
                     onClick={props.onFlipVertical}
@@ -660,7 +1001,7 @@ const ModeToolsComponent = props => {
         const movementOptions = (
             <InputGroup className={classNames(styles.modDashedBorder, styles.modLabeledIconHeight)}>
                 <LabeledIconButton
-                    hideLabel={props.intl.locale !== 'en'}
+                    hideLabel={hideLabel(props.intl.locale)}
                     icon={Plus}
                     title={props.intl.formatMessage(messages.movementCenter)}
                     onClick={props.onCenterSelection}
@@ -725,7 +1066,7 @@ const ModeToolsComponent = props => {
                                     }
                                     tipSize={.01}
                                 >
-                                    More
+                                    {props.intl.formatMessage(messages.more)}
                                 </Dropdown>
                             </InputGroup>
                         </MediaQuery>
@@ -748,7 +1089,7 @@ const ModeToolsComponent = props => {
                             }
                             tipSize={.01}
                         >
-                            More
+                            {props.intl.formatMessage(messages.more)}
                         </Dropdown>
                     </InputGroup>
                 </MediaQuery>
@@ -833,7 +1174,7 @@ const ModeToolsComponent = props => {
     {
         return (
             <div className={classNames(props.className, styles.modeTools)}>
-                <span>{`Hold Alt + Shift to resize arrow tip`}</span>
+                <span>{props.intl.formatMessage(messages.arrowTipResize)}</span>
             </div>
         );
     }

@@ -18,12 +18,14 @@ const renderIcon = icon => {
             className: classNames(
                 styles.editFieldIcon,
                 icon.props.className
-            )
+            ),
+            stroke: 'var(--looks-secondary)'
         });
     }
 
     return React.createElement(icon, {
-        className: styles.editFieldIcon
+        className: styles.editFieldIcon,
+        stroke: 'var(--looks-secondary)'
     });
 };
 

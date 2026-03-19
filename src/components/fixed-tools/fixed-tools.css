@@ -115,10 +115,6 @@ $border-radius: 0.25rem;
     cursor: auto;
 }
 
-.mod-menu-item:hover {
-    background: $motion-transparent;
-}
-
 .mod-disabled:hover {
     background-color: transparent;
 }

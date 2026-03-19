@@ -234,45 +234,20 @@ const FixedToolsComponent = props => {
                                     className={styles.modContextMenu}
                                     rtl={props.rtl}
                                 >
-                                    <Button
-                                        className={classNames(styles.modMenuItem, {
-                                            [styles.modDisabled]: !shouldShowBringForward()
-                                        })}
+                                    <LabeledIconButton
                                         disabled={!shouldShowBringForward()}
+                                        hideLabel={false}
+                                        icon={BringToFront}
+                                        title={props.intl.formatMessage(messages.front)}
                                         onClick={props.onSendToFront}
-                                    >
-                                        <BringToFront
-                                            className={styles.menuItemIcon}
-                                            draggable={false}
-                                        />
-                                        <span>{props.intl.formatMessage(messages.front)}</span>
-                                    </Button>
-                                    <Button
-                                        className={classNames(styles.modMenuItem, {
-                                            [styles.modDisabled]: !shouldShowSendBackward()
-                                        })}
+                                    />
+                                    <LabeledIconButton
                                         disabled={!shouldShowSendBackward()}
+                                        hideLabel={false}
+                                        icon={SendToBack}
+                                        title={props.intl.formatMessage(messages.back)}
                                         onClick={props.onSendToBack}
-                                    >
-                                        <SendToBack
-                                            className={styles.menuItemIcon}
-                                            draggable={false}
-                                        />
-                                        <span>{props.intl.formatMessage(messages.back)}</span>
-                                    </Button>
-
-                                    {/* To be rotation point */}
-                                    {/* <Button
-                                        className={classNames(styles.modMenuItem, styles.modTopDivider)}
-                                        onClick={function () {}}
-                                    >
-                                        <img
-                                            className={styles.menuItemIcon}
-                                            draggable={false}
-                                            src={rotationPointIcon}
-                                        />
-                                        <span>{'Rotation Point'}</span>
-                                    </Button> */}
+                                    />
                                 </InputGroup>
                             }
                             tipSize={.01}
