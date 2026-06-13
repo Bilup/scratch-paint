@@ -13,11 +13,11 @@ const FillHorzGradientEnabled = props => (
         <desc>Created with Sketch.</desc>
         <defs>
             <linearGradient
-                x1="100%"
+                x1="0%"
                 y1="50%"
-                x2="0%"
+                x2="100%"
                 y2="50%"
-                id="linearGradient-1"
+                id="linearGradient-horz"
             >
                 <stop
                     stopColor="#FFFFFF"
@@ -41,7 +41,7 @@ const FillHorzGradientEnabled = props => (
             <rect
                 id="Horizontal"
                 stroke="#000000"
-                fill="url(#linearGradient-1)"
+                fill="url(#linearGradient-horz)"
                 x="0.5"
                 y="0.5"
                 width="19"
