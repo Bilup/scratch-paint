@@ -20,12 +20,12 @@ const FillHorzGradientEnabled = props => (
                 id="linearGradient-horz"
             >
                 <stop
-                    stopColor="#FFFFFF"
+                    stopColor="currentColor"
+                    style={{color: 'var(--paint-looks-secondary-default, #FF8C1A)'}}
                     offset="0%"
                 />
                 <stop
-                    stopColor="currentColor"
-                    style={{color: 'var(--paint-looks-secondary-default, #FF8C1A)'}}
+                    stopColor="#FFFFFF"
                     offset="100%"
                 />
             </linearGradient>
