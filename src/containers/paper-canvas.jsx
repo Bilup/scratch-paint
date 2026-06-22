@@ -258,8 +258,6 @@ class PaperCanvas extends React.Component {
         this.clearPaperCanvas();
 
         if (this.queuedImport) this.queuedImport = null;
-        const itemWidth = item.bounds.width;
-        const itemHeight = item.bounds.height;
 
         // Get reference to viewbox
         let mask;
@@ -300,8 +298,8 @@ class PaperCanvas extends React.Component {
             }
             item.translate(CENTER.subtract(rotationPoint.multiply(2)));
         } else {
-            // Center
-            item.translate(CENTER.subtract(itemWidth, itemHeight));
+            // Center the item using the scaled bounds
+            item.translate(CENTER.subtract(item.bounds.center));
         }
 
         paper.project.activeLayer.insertChild(0, item);
